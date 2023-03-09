@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>Contact Us</h1>
-    <form>
+<!--     <form>
       <label>Name:</label>
       <br />
       <input type="text" id="name" />
@@ -21,6 +21,22 @@
       <textarea id="message"></textarea>
       <br />
       <button type="submit" onclick="sendEmail()">Send</button>
-    </form>
+    </form> -->
+    <form action="https://mail-server-54wd.onrender.com/send-mail" method="post">
+  <label for="name">Имя:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="subject">Тема:</label>
+  <input type="text" id="subject" name="subject" required>
+
+  <label for="message">Сообщение:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <input type="submit" value="Отправить">
+</form>
+
   </body>
 </html>
