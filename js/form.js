@@ -3,7 +3,7 @@ function sendEmail() {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  fetch("https://mail-server-54wd.onrender.com/contact", {
+  fetch("https://mail-server-54wd.onrender.com/send", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, email, message })
